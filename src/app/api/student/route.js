@@ -120,7 +120,7 @@ export const DELETE = async (request) => {
   if(foundIndex == -1){
       return NextResponse.json(
           {ok:false , message:"Student Id does not exist"},
-          {status:400}
+          {status:404}
       )
   }
   //perform removing student from DB. You can choose from 2 choices
