@@ -110,7 +110,7 @@ export const DELETE = async (request) => {
             message: parseResult.error.issues[0].message,
         },
         {
-            status:400,
+            status:404,
         })
     };
 
